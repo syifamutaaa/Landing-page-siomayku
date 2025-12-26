@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SiomayKu Tiga Saudara</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* --- CSS: Bagian Mengatur Tampilan --- */
+        
+        /* Reset dasar agar tampilan rapi di semua browser */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Warna Utama */
+        :root {
+            --primary-color: #d35400; /* Warna Oranye Gelap (Bumbu Kacang) */
+            --secondary-color: #f39c12; /* Warna Oranye Terang */
+            --light-bg: #fdf2e9;
+            --text-color: #333;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--text-color);
+        }
+
+        /* Navigasi */
+        header {
+            background: white;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section (Bagian Utama) */
+        .hero {
+            background-color: var(--light-bg);
+            padding: 4rem 5%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+        }
+
+        .btn {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: var(--secondary-color);
+        }
+
+        /* Keunggulan */
+        .features {
+            padding: 4rem 5%;
+            text-align: center;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature-card {
+            padding: 1.5rem;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        /* Menu */
+        .menu {
+            background-color: var(--light-bg);
+            padding: 4rem 5%;
+            text-align: center;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .menu-item {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        /* Placeholder gambar (bisa diganti nanti) */
+        .menu-img {
+            width: 100%;
+            height: 200px;
+            background-color: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+        }
+
+        .menu-desc {
+            padding: 1.5rem;
+        }
+
+        .price {
+            color: var(--primary-color);
+            font-weight: bold;
+            font-size: 1.2rem;
+            display: block;
+            margin-top: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color:white;
+            color: #d35400;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        footer a {
+            color: var(--secondary-color);
+        }
+
+        /* Tampilan HP (Responsive) */
+        @media (max-width: 768px) {
+            .hero h2 { font-size: 2rem; }
+            nav ul { display: none; } /* Menyembunyikan menu atas di HP agar simpel */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+    <img src="c:\Users\Hp2025\Downloads\SiomaykuTigaSaudara\favicon\logo.png" alt="Logo Perusahaan" class="logo-header" height="50">
+    <h1>Siomayku Tiga Saudara</h1>
+        <nav>
+            <ul>
+                <li><a href="#hero">Beranda</a></li>
+                <li><a href="#contact">Alamat</a></li>
+                <li><a href="https://wa.me/6289504058618" target="_blank" rel="noopener noreferrer" title="Hubungi WhatsApp">
+  <i class="fa fa-whatsapp" style="font-size:24px;"></i></a> <!-- Ganti dengan ikon Anda -->
+</a>
+</li>
+                <li><a href="https://www.instagram.com/siomay_stasiunpagaden?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" title="Kunjungi Instagram">
+        <i class="fa fa-instagram" style="font-size:24px;">
+        </i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="hero">
+        <h2>Nikmati Siomay Ikan Tenggiri Asli</h2>
+        <p>Rasakan kelezatan siomay dengan bumbu kacang kental yang gurih. Dibuat segar setiap hari tanpa bahan pengawet.</p>
+        <a href="#menu" class="btn">Lihat Menu</a>
+    </section>
+
+    <section class="features">
+        <h3>Kenapa Harus SiomayKu Tiga Saudara?</h3>
+        <div class="features-grid">
+            <div class="feature-card">
+                <h4>🐟Ikan Asli</h4>
+                <p>Menggunakan 100% Ikan Tenggiri pilihan yang segar.</p>
+            </div>
+            <div class="feature-card">
+            <h4>🥜Bumbu Kacang Spesial</h4></i>
+                <p>Racikan bumbu kacang spesial yang kental dan lezat.</p>
+            </div>
+            <div class="feature-card">
+                <h4>✅ 100% Halal</h4>
+                <p>Bahan-bahan terjamin kebersihan dan kehalalannya.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+        <h3>Menu Favorit</h3>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <div class="menu-img">
+                    <img src="https://img.freepik.com/premium-photo/homemade-siomay-bandung_511235-9106.jpg" alt="Siomay Kukus" style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <div class="menu-desc">
+                    <h4>Siomay Ikan Tenggiri</h4>
+                    <p>Dalam satu porsi siomay terdapat:  siomay, telor, tahu, kol, kentang, dan pare</p>
+                    <span class="price">Rp 10.000</span>
+                    <br><br>
+                    <a href="https://wa.me/6289504058618?text=Halo%20saya%20mau%20pesan%20Siomay%20Komplit" class="btn" target="_blank">Pesan via WA</a>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-img">
+                    <img src="https://palpres.bacakoran.co/upload/22944ab04141c0517e7d0a73eca7ee1f.jpg" alt="Batagor" style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <div class="menu-desc">
+                    <h4>Batagor Pangsit</h4>
+                    <p>Olahan ikan tenggiri dan ayam yang dibalut pangsit, lalu digoreng sehingga memberikan tekstur krispi diluar dan lembut di dalam.</p>
+                    <span class="price">Rp 10.000</span>
+                    <br><br>
+                    <a href="https://wa.me/6289504058618?text=Halo%20saya%20mau%20pesan%20Batagor" class="btn" target="_blank">Pesan via WA</a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <h3>Siomayku Tiga Saudara</h3>
+        <p>📍 Jl. Stasiun, Pagaden, Kec. Pagaden, Kabupaten Subang, Jawa Barat 41252</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.531829527296!2d107.81450977499233!3d-6.45408959353739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6939a29bf0c811%3A0xb6fb7d301d35fdb2!2sSiomayku!5e0!3m2!1sid!2sid!4v1766708947586!5m2!1sid!2sid" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <br>
+        <p>&copy; 2025 Siomayku Tiga Saudara.</p>
+    </footer>
+
+</body>
+</html>
